@@ -1,0 +1,36 @@
+.slider__container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-track {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.slick-slide>div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.slider__item {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+ }
+
+@media (max-width:900px) {
+
+    .slider__container {
+        max-width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+}

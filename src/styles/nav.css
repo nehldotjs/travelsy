@@ -1,0 +1,371 @@
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 0px 40px;
+
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    border-bottom: 1px solid #D8D8D8;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.nav-logo-container {
+    display: flex;
+
+}
+
+.nav-logo-container .logo {
+    display: flex;
+    font-family: Mulish;
+
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+
+    color: #4A4A4A;
+}
+
+
+/* _________________________________________________________ */
+
+.nav-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 13px;
+    font-family: Mulish;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 100%;
+    position: relative;
+}
+
+.nav-link::after {
+    height: 2px;
+    position: absolute;
+    width: 0px;
+    content: "";
+    bottom: -5px;
+    left: 0px;
+    background-color: #4A4A4A;
+    transition: all 350ms ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    background-color: #fff;
+
+
+}
+
+.search-bar {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+
+    top: -100%;
+    right: 20px;
+    z-index: -1;
+
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.isSearch {
+    transition: all 350ms ease-in-out;
+    top: 100%;
+}
+
+.search-bar input {
+    font-family: mulish;
+    color: #4A4A4A;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+}
+
+.search-bar .searchbtn {
+    width: auto;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+    color: #4A4A4A;
+
+
+}
+
+.search-bar .searchbtn:hover {
+    color: #FF5200;
+    transform: scale(1.2);
+
+}
+
+.reservationBtn {
+    background-color: #FF5200;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Mulish;
+    width: 150px;
+    height: 40px;
+    gap: 10px;
+    color: white;
+
+    border-radius: 20px;
+    display: flex;
+    transition: 350ms all ease-in-out;
+}
+
+.reservationBtn:hover {
+    scale: 1.1;
+}
+
+.reservationBtn p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.searchBtn {
+    color: #4A4A4A;
+    display: flex;
+    cursor: pointer;
+}
+
+.userImg {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.userImg-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.userImg-conatiner img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+
+}
+
+.userActivityIndicator {
+    display: flex;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: red;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+
+    position: absolute;
+
+}
+
+.dropDownBtn {
+    color: #4A4A4A;
+}
+
+
+
+
+
+/* _______________________________________________________________ */
+
+
+.nav-burgerMenu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.burgerBtn {
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+}
+
+.burgerBtn::before {
+    transition: 500ms all ease;
+    content: "";
+    background-color: #FF5200;
+    width: 100%;
+    position: relative;
+    height: 3px;
+
+}
+
+.burgerBtn::after {
+    transition: 500ms all ease;
+    content: "";
+    background-color: #FF5200;
+    width: 100%;
+    position: relative;
+    height: 3px;
+
+}
+
+/* -----------------------------------  */
+.burgerBtnAni {
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+}
+
+.burgerBtnAni::before {
+    transition: 500ms all ease;
+    background-color: #FF5200;
+    transform: rotate(-45deg);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+}
+
+.burgerBtnAni::after {
+    transition: 500ms all ease;
+    background-color: #FF5200;
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+}
+
+
+.nav-mobileMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5200;
+
+    right: 0px;
+    height: 60vh;
+    width: 70%;
+    gap: 20px;
+    top: 100%;
+
+    overflow: hidden;
+    border-radius: 0px 0px 0px 70px;
+
+    transition: 350ms all ease-in-out;
+}
+
+.nav-mobileMenu p {
+    color: white;
+    font-size: 30px;
+    font-family: mulish;
+    cursor: pointer;
+}
+
+.isMenu {
+    width: 0px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .nav-logo-container {
+            display: flex;
+            flex: 1;
+    
+        }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-burgerMenu {
+        display: flex;
+    }
+
+    .nav-mobileMenu {
+        display: flex;
+    }
+
+    .reservationBtn {
+        display: none;
+    }
+
+    .mobile-reserve-btn {
+        background-color: white;
+        color: #FF5200;
+        display: flex;
+    }
+
+    .mobile-reserve-btn p {
+        font-size: 12px;
+        color: #FF5200;
+    }
+}

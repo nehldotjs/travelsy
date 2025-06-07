@@ -1,0 +1,140 @@
+.testmonials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 518px;
+    background-color: #F8F8F8;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 60%;
+}
+
+.t-section1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.t-section1 p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Mulish;
+
+    text-transform: uppercase;
+    color: #9B9B9B;
+    width: 101px;
+    height: 18px;
+
+    line-height: 100%;
+
+}
+
+.t-section1 h1 {
+    font-family: didot;
+    font-size: 50px;
+    font-weight: 700;
+
+    line-height: 50px;
+    height: 150px;
+    width: 357px;
+
+    letter-spacing: 0px;
+
+}
+
+.t-section1 h1 span {
+    color: #FF5200;
+}
+
+.t-carousel-btn {
+    display: flex;
+    height: 60px;
+    width: 123px;
+    background-color: white;
+    gap: 5px;
+}
+
+.t-carousel-btn button {
+    background-color: white;
+    cursor: pointer;
+    color: #9B9B9B;
+    border: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 350ms ease-in-out;
+}
+
+.t-carousel-btn button:hover {
+    scale: 1.3;
+    background-color: #FF5200;
+    color: #fff;
+}
+
+.forward-slash {
+    height: 70%;
+    width: 1px;
+    margin: auto;
+    transform: rotate(10deg);
+    border: none;
+    background-color: #D8D8D8;
+}
+
+
+.t-section2 {
+    display: flex;
+    flex: 2;
+    height: 320px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+@media screen and (max-width: 900px) {
+    .testmonials-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .t-carousel-btn {
+        display: none;
+    }
+
+    .t-section2 {
+        display: flex;
+        flex: unset;
+        width: 100%;
+        height: 320px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .t-carousel-btn {
+        display: flex;
+    }
+}
