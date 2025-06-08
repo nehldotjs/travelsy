@@ -56,7 +56,7 @@
     gap: 30px;
     flex-direction: row;
     width: 100%;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
 }
@@ -81,11 +81,14 @@ flex-wrap: wrap;
     border: 1px solid #E4E4E4;
     border-radius: 4px;
     /* appearance: none; */
-      outline: none;
+    outline: none;
     cursor: pointer;
     background-color: white;
 }
 
 @media screen and (max-width: 900px) {
-
+    .exp-content-container h1 {
+        width: auto;
+font-size: 60px;
+    }
 }

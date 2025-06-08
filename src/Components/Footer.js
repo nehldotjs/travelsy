@@ -33,41 +33,57 @@ function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="f-1">
-        <div className="f-section1">
-          <h3 className="header">Need Travel Help?</h3>
-          <p className="f-Link animation">Got Questions? Call us 24/7!</p>
-          <p className="f-Link animation">Call Us: +254 716909 815</p>
-          <p className="f-Link animation">
-            Email Us: <span>info@travelsy.com</span>
+        <div className="f-1-section1">
+          <div className="f-section1">
+            <h3 className="header">Need Travel Help?</h3>
+            <p className="f-Link animation">Got Questions? Call us 24/7!</p>
+            <p className="f-Link animation">Call Us: +254 716909 815</p>
+            <p className="f-Link animation">
+              Email Us: <span>info@travelsy.com</span>
+            </p>
+          </div>
+          <div className="f-section2">
+            <h3 className="header">company</h3>
+            <p className="f-Link animation">about us</p>
+            <p className="f-Link animation">careers</p>
+            <p className="f-Link animation">terms of use</p>
+            <p className="f-Link animation">privacy statement</p>
+            <p className="f-Link animation">give us feedback</p>
+            <p className="f-Link animation">partner with us</p>
+          </div>
+        </div>
+
+        <div className="f-1-section2">
+          <div className="f-section3">
+            <h3 className="header">
+              other services & <br /> support
+            </h3>
+            <p className="f-Link animation">rewards program</p>
+            <p className="f-Link animation">partners</p>
+            <p className="f-Link animation">legal</p>
+            <p className="f-Link animation">privacy policy</p>
+            <p className="f-Link animation">customer service help</p>
+          </div>
+          <div className="f-section4">
+            <h3 className="header">quick links</h3>
+            <p className="f-Link animation">your account</p>
+            <p className="f-Link animation">camping locations</p>
+            <p className="f-Link animation">activities</p>
+            <p className="f-Link animation">hire equipment</p>
+            <p className="f-Link animation">blogs</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="f-2">
+        <div className="f-section6">
+          <h3 className="header">contact info</h3>
+          <p className="f-Link address">
+            2nd Floor, Fedha Plaza, Westlands, Nairobi, Kenya.
           </p>
+          <p className="f-Link box">P.O Box 7231-00300 Nairobi, Kenya</p>
         </div>
-        <div className="f-section2">
-          <h3 className="header">company</h3>
-          <p className="f-Link animation">about us</p>
-          <p className="f-Link animation">careers</p>
-          <p className="f-Link animation">terms of use</p>
-          <p className="f-Link animation">privacy statement</p>
-          <p className="f-Link animation">give us feedback</p>
-          <p className="f-Link animation">partner with us</p>
-        </div>
-        <div className="f-section3">
-          <h3 className="header">
-            other services & <br /> support
-          </h3>
-          <p className="f-Link animation">rewards program</p>
-          <p className="f-Link animation">partners</p>
-          <p className="f-Link animation">legal</p>
-          <p className="f-Link animation">privacy policy</p>
-          <p className="f-Link animation">customer service help</p>
-        </div>
-        <div className="f-section4">
-          <h3 className="header">quick links</h3>
-          <p className="f-Link animation">your account</p>
-          <p className="f-Link animation">camping locations</p>
-          <p className="f-Link animation">activities</p>
-          <p className="f-Link animation">hire equipment</p>
-          <p className="f-Link animation">blogs</p>
-        </div>
+
         <div className="f-section5">
           <h3 className="header">mailing list</h3>
           <p className="f-Link mail-text">
@@ -81,21 +97,10 @@ function Footer() {
         </div>
       </div>
 
-      <div className="f-2">
-        <div className="f-section6">
-          <h3 className="header">contact info</h3>
-          <p className="f-Link address">
-            2nd Floor, Fedha Plaza, Westlands, Nairobi, Kenya.
-          </p>
-          <p className="f-Link box">P.O Box 7231-00300 Nairobi, Kenya</p>
-        </div>
-      </div>
-
       <div className="f-sponsors">
         <div className="f-sponsors-wrapper">
           <h2 className="logo">travelsy</h2>
 
-          
           <div className="sponsor-logo-wrapper">
             <img src={img1} alt="" className="sponsor-logo" />
           </div>

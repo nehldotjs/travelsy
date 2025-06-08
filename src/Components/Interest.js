@@ -123,6 +123,7 @@ const Interest = () => {
               src={activity.image}
               alt=""
               data-aos="zoom-in"
+              loading="lazy"
             />
 
             <div className="overlay">

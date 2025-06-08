@@ -1,12 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/testimonials.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Carousel from "../customs/Carousel";
 import TestimonialCards from "../customs/TestimonialCards";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimonial() {
   const sliderRef = useRef(null);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   const Testimonial = [
     {
       id: 1,
@@ -62,13 +70,13 @@ function Testimonial() {
     <div className="testmonials-wrapper">
       <div className="testimonial-container">
         <div className="t-section1">
-          <p>Testimonials</p>
-          <h1>
+          <p data-aos="zoom-in">Testimonials</p>
+          <h1 data-aos="zoom-in">
             what <br /> customers <br />
             <span>say about us</span>
           </h1>
 
-          <div className="t-carousel-btn ">
+          <div data-aos="zoom-in" className="t-carousel-btn ">
             <button onClick={() => sliderRef.current?.slickPrev()}>
               <IoIosArrowBack />
             </button>
@@ -79,7 +87,7 @@ function Testimonial() {
           </div>
         </div>
 
-        <div className="t-section2">
+        <div data-aos="zoom-in" className="t-section2">
           <Carousel
             data={Testimonial}
             sliderRef={sliderRef}
