@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/travelsy/static/css/main.8f4cf233.css",
+    "main.js": "/travelsy/static/js/main.72befaa0.js",
+    "static/js/453.b46e75b4.chunk.js": "/travelsy/static/js/453.b46e75b4.chunk.js",
+    "static/media/slick.svg": "/travelsy/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/travelsy/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/travelsy/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/travelsy/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/travelsy/index.html",
+    "main.8f4cf233.css.map": "/travelsy/static/css/main.8f4cf233.css.map",
+    "main.72befaa0.js.map": "/travelsy/static/js/main.72befaa0.js.map",
+    "453.b46e75b4.chunk.js.map": "/travelsy/static/js/453.b46e75b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f4cf233.css",
+    "static/js/main.72befaa0.js"
+  ]
+}
